@@ -1,0 +1,35 @@
+start: |
+  <strong>Ecological Bot About Trash Recycling</strong> — бот для
+
+  Доброго времени суток, я телеграммбот, а также ваш виртуальный помощник в улучшении экологии. С помощью меня вы можете копить баллы, следить за количеством сданного мусора, а также приобретать товары
+
+feedback: |-
+  telegram: @dam_mek
+  <a href="https://vk.com/dam_mek">VK</a>
+  <a href="https://www.instagram.com/dam_mek">Insta</a>
+
+about:
+  Lorem Ipsum
+
+products:
+  introduction: |
+    Список товаров, которые вы можете приобрести за баллы:
+
+  row in list:
+    <i>{product_name}</i> — {price} бал.
+
+categories:
+  introduction: |
+    Список категорий мусора, за которые вы можете начислить баллы:
+
+
+  row in list:
+    <i>{category_name} {category_icon}</i> — {price_koef} бал./грамм
+
+cancel handler:
+  no state: There is no operation
+  state was cleared: All right! Operation aborted
+
+error: |
+  An Error occurred: *{error}*
+  You can use command /feedback for help

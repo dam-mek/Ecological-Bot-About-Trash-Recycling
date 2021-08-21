@@ -1,0 +1,24 @@
+menu slave:
+  Balance: Мой баланс
+  Statistic: Моя статистика
+  Catalog: Каталог товаров
+  Telegram Id: Узнать мой код
+
+menu master:
+  add trash: Начислить баллы
+  add product: Добавить продукт
+  add master: Добавить админа
+
+verification of entered data: ['Да', 'Нет']
+
+skip:
+  - Skip entering the description
+
+dates:
+  yesterday: Yesterday
+  today: Today
+  another: Another
+
+after choice:
+  product: product
+  place: place
