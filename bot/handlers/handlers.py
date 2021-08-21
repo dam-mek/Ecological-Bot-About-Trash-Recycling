@@ -8,6 +8,7 @@ from bot import exceptions
 from bot.handlers.finite_state_machine.buying import register_handlers_buying
 from bot.handlers.finite_state_machine.adding_eballs import register_handlers_adding_eballs
 from bot.handlers.finite_state_machine.adding_product import register_handlers_adding_product
+from bot.handlers.finite_state_machine.making_master import register_handlers_making_master
 from bot.messages import bot_responses
 from bot.middlewares import check_is_master
 import db.clients
@@ -17,9 +18,11 @@ def register_handlers(dp: Dispatcher):
     dp.register_message_handler(send_start_master, check_is_master, commands=['start'], state='*')
     register_handlers_adding_eballs(dp)
     register_handlers_adding_product(dp)
+    register_handlers_making_master(dp)
     dp.register_message_handler(future_master, Text(equals=reply_keyboard_texts['menu master']['add master']), check_is_master, state='*')
     dp.register_message_handler(send_start_master, check_is_master, state='*')
     dp.register_message_handler(send_start, commands=['start'], state='*')
+    dp.register_message_handler(cancel_handler, commands=['cancel'], state='*')
     dp.register_message_handler(send_balance,
                                 Text(equals=reply_keyboard_texts['menu slave']['Balance'], ignore_case=True))
     dp.register_message_handler(send_statistic,
