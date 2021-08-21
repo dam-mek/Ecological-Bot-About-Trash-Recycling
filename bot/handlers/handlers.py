@@ -20,7 +20,6 @@ def register_handlers(dp: Dispatcher):
     dp.register_message_handler(future_master, Text(equals=reply_keyboard_texts['menu master']['add master']), check_is_master, state='*')
     dp.register_message_handler(send_start_master, check_is_master, state='*')
     dp.register_message_handler(send_start, commands=['start'], state='*')
-    dp.register_message_handler(cancel_handler, commands=['cancel'], state='*')
     dp.register_message_handler(send_balance,
                                 Text(equals=reply_keyboard_texts['menu slave']['Balance'], ignore_case=True))
     dp.register_message_handler(send_statistic,
