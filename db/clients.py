@@ -8,7 +8,7 @@ def add_new_client(telegram_id):
             session.add(db.Client(telegram_id=telegram_id))
         eballs = session.query(db.Eballs).filter(db.Eballs.client_telegram_id == telegram_id).first()
         if eballs is None:
-            session.add(db.Eballs(client_telegram_id=telegram_id, amount=0))
+            session.add(db.Eballs(client_telegram_id=telegram_id, amount=1024))
 
 
 def get_clients():
