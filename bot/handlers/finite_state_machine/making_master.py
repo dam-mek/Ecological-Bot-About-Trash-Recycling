@@ -29,7 +29,7 @@ async def start_making_master(message: types.Message, state: FSMContext):
 async def process_telegram_id(message: types.Message, state: FSMContext):
     data = await state.get_data()
     db.clients.make_master(int(message.text))
-    await message.answer(f'{message.text} сделан админом')
+    await message.answer(f'{message.text} сделан админом', reply_markup=reply_keyboards.menu_master)
     await delete_messages(message.from_user.id, data['message_ids'] + [message.message_id])
     await state.finish()
 
