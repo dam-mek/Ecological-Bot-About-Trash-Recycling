@@ -1,3 +1,3 @@
-# Many Money Telegram bot — personal finance bot. 
+<strong>Ecological Bot About Trash Recycling</strong> — бот для
 
-**[link to the bot](t.me/FastGoodBot "link to the bot")**
+  Доброго времени суток, я телеграммбот, а также ваш виртуальный помощник в улучшении экологии. С помощью меня вы можете копить баллы, следить за количеством сданного мусора, а также приобретать товары
