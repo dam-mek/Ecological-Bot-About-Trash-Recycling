@@ -1,11 +1,11 @@
 start: |
-  <strong>Ecological Bot About Trash Recycling</strong> — бот для
+  <strong>Ecological Bot About Trash Recycling</strong> — неофициальный бот программы утилизации отходов "Точка сбора" от "Калины Малины"
 
   Доброго времени суток, я телеграммбот, а также ваш виртуальный помощник в улучшении экологии. С помощью меня вы можете копить баллы, следить за количеством сданного мусора, а также приобретать товары
 
 feedback: |-
-  telegram: @dam_mek
-  <a href="https://vk.com/dam_mek">VK</a>
+  telegram: @dam_mek @kashk09 @Fel1of
+  <a href="https://vk.com/dam_mek">VK</a> <a href="https://vk.com/unirogik">VK</a>
   <a href="https://www.instagram.com/dam_mek">Insta</a>
 
 about:
