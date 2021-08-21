@@ -22,7 +22,7 @@ class Client(Base):
 class Eballs(Base):
     __tablename__ = 'eballs'
 
-    amount = Column(Integer, default=0)
+    amount = Column(Integer, default=1024)
     client_telegram_id = Column(Integer, ForeignKey(Client.telegram_id), primary_key=True)
     client = relationship('Client', back_populates='eballs')
 
