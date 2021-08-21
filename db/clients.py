@@ -16,6 +16,12 @@ def get_clients():
     clients = db.current_session.query(db.Client)
     return clients.all()
 
+def make_master(telegram_id):
+    with db.session_scope() as session:
+        user = session.query(db.Client).filter(db.Client.telegram_id == telegram_id).first()
+        if user is None:
+            return
+        user.is_master = True
 
 def get_eballs(telegram_id):
     eballs = db.current_session.query(db.Eballs).filter(db.Eballs.client_telegram_id == telegram_id).first()
